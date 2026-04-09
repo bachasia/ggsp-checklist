@@ -1,0 +1,1330 @@
+{
+  "checklist": [
+    {
+      "id": "1",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Website sử dụng HTTPS (Chứng chỉ SSL)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tất cả các trang phải tải qua HTTPS. Nội dung hỗn hợp (ảnh HTTP trên trang HTTPS) cũng gây ra vấn đề.",
+      "tool": "https://www.ssllabs.com/ssltest/"
+    },
+    {
+      "id": "2",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "HTTP tự động chuyển hướng sang HTTPS",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nhập http://yoursite.com phải tự động chuyển sang https://yoursite.com.",
+      "tool": ""
+    },
+    {
+      "id": "3",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Chứng chỉ SSL còn hạn và hợp lệ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Kiểm tra ngày hết hạn SSL. SSL hết hạn = bị tạm ngưng ngay lập tức.",
+      "tool": "https://www.ssllabs.com/ssltest/"
+    },
+    {
+      "id": "4",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Không có trang lỗi 404 (liên kết hỏng)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tất cả trang được liên kết từ menu, footer và trang sản phẩm phải hoạt động. Dùng Dead Link Checker.",
+      "tool": "https://www.deadlinkchecker.com/"
+    },
+    {
+      "id": "5",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Điểm Google PageSpeed chấp nhận được (Mobile ≥ 50)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Website chậm làm giảm độ tin cậy và ảnh hưởng chất lượng quảng cáo. Mục tiêu 50+ trên mobile.",
+      "tool": "https://pagespeed.web.dev/"
+    },
+    {
+      "id": "6",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Website không có phần mềm độc hại hoặc script đáng ngờ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Google sẽ tạm ngưng ngay tài khoản có phần mềm độc hại. Quét định kỳ.",
+      "tool": "https://www.virustotal.com/gui/home/url"
+    },
+    {
+      "id": "7",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Website hiển thị tốt trên thiết bị di động (responsive)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Website phải hiển thị đúng trên thiết bị di động. Kiểm tra trên nhiều kích thước màn hình.",
+      "tool": "https://search.google.com/test/mobile-friendly"
+    },
+    {
+      "id": "8",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Không có pop-up gây hiểu nhầm hoặc che khuất nội dung",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Pop-up chặn nội dung, đồng hồ đếm ngược giả, hoặc nút đóng gây hiểu nhầm đều vi phạm chính sách.",
+      "tool": ""
+    },
+    {
+      "id": "9",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Tên miền đã được xác nhận trong Google Merchant Center",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tên miền phải được xác nhận trong Merchant Center qua thẻ HTML, GA hoặc GTM.",
+      "tool": ""
+    },
+    {
+      "id": "10",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Robots.txt không chặn Googlebot thu thập dữ liệu",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Đảm bảo robots.txt cho phép Googlebot thu thập trang sản phẩm và trang chính sách.",
+      "tool": ""
+    },
+    {
+      "id": "11",
+      "section": "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "criteria": "Sitemap.xml tồn tại và đã gửi lên Google",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Gửi sitemap qua Google Search Console để lập chỉ mục nhanh hơn.",
+      "tool": ""
+    },
+    {
+      "id": "12",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Email doanh nghiệp hợp lệ và chuyên nghiệp (không dùng Gmail cá nhân)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải dùng email tên miền doanh nghiệp (vd: support@cửahàng.com). Email cá nhân như Gmail không được chấp nhận.",
+      "tool": "https://email-checker.net/"
+    },
+    {
+      "id": "13",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Số điện thoại doanh nghiệp được hiển thị",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Không bắt buộc nhưng rất khuyến nghị. Phải là số điện thoại thực, có thể liên lạc được.",
+      "tool": ""
+    },
+    {
+      "id": "14",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Địa chỉ doanh nghiệp theo đúng định dạng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Định dạng: [Số nhà + Tên đường], [Thành phố], [Tỉnh/Bang], [Mã bưu chính], [Quốc gia]. Phải khớp với GMC.",
+      "tool": ""
+    },
+    {
+      "id": "15",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Địa chỉ doanh nghiệp nhất quán trên TẤT CẢ các trang",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Địa chỉ trên trang Giới thiệu, Liên hệ, Footer và GMC phải hoàn toàn giống nhau.",
+      "tool": ""
+    },
+    {
+      "id": "16",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Tên pháp lý của doanh nghiệp được công bố",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Hiển thị tên doanh nghiệp đã đăng ký (vd: LLC, Ltd, Inc) trên website.",
+      "tool": ""
+    },
+    {
+      "id": "17",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Thông tin quốc gia/xuất xứ nhất quán trên toàn website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "KHÔNG được khai báo các quốc gia khác nhau trên các trang khác nhau (vd: 'từ Úc' ở một trang, 'từ Mỹ' ở trang khác).",
+      "tool": ""
+    },
+    {
+      "id": "18",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Vị trí doanh nghiệp hiển thị trên Google Maps (nếu có cửa hàng thực tế)",
+      "level": "🟣 TÙY CHỌN",
+      "guide": "Cho cửa hàng thực tế, hãy thiết lập Google My Business. Không bắt buộc với cửa hàng online.",
+      "tool": ""
+    },
+    {
+      "id": "19",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Mô hình kinh doanh được giải thích rõ ràng (vd: made-to-order, dropship)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Giải thích cách doanh nghiệp hoạt động để khách hàng biết điều gì sẽ xảy ra.",
+      "tool": ""
+    },
+    {
+      "id": "20",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Logo và tên thương hiệu nhất quán trên toàn website",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Logo, tên thương hiệu và nhận diện thương hiệu phải giống nhau trên mọi trang. Không có tham chiếu đến thương hiệu khác.",
+      "tool": ""
+    },
+    {
+      "id": "21",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Logo/tên thương hiệu trong GMC khớp với website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tên doanh nghiệp và logo tải lên Merchant Center phải khớp chính xác với website.",
+      "tool": ""
+    },
+    {
+      "id": "22",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Năm bản quyền trong footer là năm hiện tại",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Footer nên hiển thị năm hiện tại (vd: © 2026).",
+      "tool": ""
+    },
+    {
+      "id": "23",
+      "section": "Thông Tin Doanh Nghiệp",
+      "criteria": "Tên chủ sở hữu doanh nghiệp được công bố",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Hiển thị tên chủ sở hữu tăng độ tin cậy. Có thể đặt trong trang Giới thiệu hoặc footer.",
+      "tool": ""
+    },
+    {
+      "id": "24",
+      "section": "Điều Hướng Website > Menu Header",
+      "criteria": "Liên kết Trang chủ trong header",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Menu điều hướng chính phải có liên kết đến trang chủ.",
+      "tool": ""
+    },
+    {
+      "id": "25",
+      "section": "Điều Hướng Website > Menu Header",
+      "criteria": "Liên kết Tất cả sản phẩm / Cửa hàng trong header",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Khách hàng phải có thể duyệt tất cả sản phẩm từ menu chính.",
+      "tool": ""
+    },
+    {
+      "id": "26",
+      "section": "Điều Hướng Website > Menu Header",
+      "criteria": "Liên kết Giới thiệu (About Us) trong header",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Không bắt buộc nhưng rất khuyến nghị. Tăng độ tin cậy và tính minh bạch.",
+      "tool": ""
+    },
+    {
+      "id": "27",
+      "section": "Điều Hướng Website > Menu Header",
+      "criteria": "Liên kết Liên hệ (Contact Us) trong header",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Trang liên hệ phải dễ dàng truy cập từ menu điều hướng chính.",
+      "tool": ""
+    },
+    {
+      "id": "28",
+      "section": "Điều Hướng Website > Menu Header",
+      "criteria": "Liên kết Theo dõi đơn hàng (Track Order) trong header",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng rất khuyến nghị. Thể hiện sự chuyên nghiệp và chăm sóc khách hàng.",
+      "tool": ""
+    },
+    {
+      "id": "29",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Trang chủ trong footer",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Footer nên có các liên kết điều hướng để dễ truy cập.",
+      "tool": ""
+    },
+    {
+      "id": "30",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Giới thiệu (About Us) trong footer",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Trang Giới thiệu phải truy cập được từ footer.",
+      "tool": ""
+    },
+    {
+      "id": "31",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Liên hệ (Contact Us) trong footer",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Thông tin liên hệ phải truy cập được từ footer.",
+      "tool": ""
+    },
+    {
+      "id": "32",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Chính sách Bảo mật trong footer",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Chính sách Bảo mật phải được liên kết trong footer.",
+      "tool": ""
+    },
+    {
+      "id": "33",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Chính sách Vận chuyển trong footer",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Chính sách Vận chuyển phải được liên kết trong footer.",
+      "tool": ""
+    },
+    {
+      "id": "34",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Chính sách Đổi trả & Hoàn tiền trong footer",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Chính sách Đổi trả phải được liên kết trong footer.",
+      "tool": ""
+    },
+    {
+      "id": "35",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Chính sách Thanh toán trong footer",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Thông tin thanh toán nên truy cập được từ footer.",
+      "tool": ""
+    },
+    {
+      "id": "36",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Điều khoản Dịch vụ trong footer",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Điều khoản Dịch vụ nên được liên kết trong footer.",
+      "tool": ""
+    },
+    {
+      "id": "37",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết Theo dõi đơn hàng trong footer",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng khuyến nghị để thuận tiện cho khách hàng.",
+      "tool": ""
+    },
+    {
+      "id": "38",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết FAQ trong footer",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "FAQ giúp giảm câu hỏi của khách hàng và tăng độ tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "39",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Tên công ty / logo trong footer",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng khuyến nghị. Củng cố nhận diện thương hiệu.",
+      "tool": ""
+    },
+    {
+      "id": "40",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Liên kết mạng xã hội trong footer",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng khuyến nghị. Hồ sơ mạng xã hội hoạt động tăng độ tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "41",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Icon phương thức thanh toán trong footer",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng khuyến nghị. Hiển thị trực quan các phương thức thanh toán được chấp nhận.",
+      "tool": ""
+    },
+    {
+      "id": "42",
+      "section": "Điều Hướng Website > Menu Footer",
+      "criteria": "Tất cả liên kết trong footer hoạt động (không có liên kết hỏng)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Mọi liên kết trong footer phải hoạt động. Liên kết hỏng trong footer = dấu hiệu cảnh báo ngay lập tức.",
+      "tool": ""
+    },
+    {
+      "id": "43",
+      "section": "Trang Liên Hệ",
+      "criteria": "Có trang Liên hệ riêng biệt",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có trang Liên hệ riêng biệt (không chỉ là liên kết trong footer).",
+      "tool": ""
+    },
+    {
+      "id": "44",
+      "section": "Trang Liên Hệ",
+      "criteria": "Tối thiểu 2 phương thức liên hệ (email + điện thoại hoặc form)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Google yêu cầu ít nhất 2 cách liên hệ: email + điện thoại, hoặc email + form liên hệ.",
+      "tool": ""
+    },
+    {
+      "id": "45",
+      "section": "Trang Liên Hệ",
+      "criteria": "Địa chỉ doanh nghiệp hiển thị đúng định dạng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Định dạng: [Số nhà + Tên đường], [Thành phố], [Tỉnh/Bang], [Mã bưu chính], [Quốc gia].",
+      "tool": ""
+    },
+    {
+      "id": "46",
+      "section": "Trang Liên Hệ",
+      "criteria": "Giờ làm việc của bộ phận hỗ trợ được đề cập",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Mẫu: 'Bộ phận hỗ trợ khách hàng hoạt động từ Thứ Hai đến Thứ Sáu, 9:00 SA đến 5:00 CH [múi giờ].'",
+      "tool": ""
+    },
+    {
+      "id": "47",
+      "section": "Trang Liên Hệ",
+      "criteria": "Form liên hệ hoạt động bình thường",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu có form liên hệ, nó phải thực sự hoạt động và gửi tin nhắn được.",
+      "tool": ""
+    },
+    {
+      "id": "48",
+      "section": "Trang Liên Hệ",
+      "criteria": "Nhúng Google Maps (nếu có địa điểm thực tế)",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Không bắt buộc nhưng tăng độ tin cậy cho doanh nghiệp có địa điểm thực tế.",
+      "tool": ""
+    },
+    {
+      "id": "49",
+      "section": "Trang Liên Hệ",
+      "criteria": "Thời gian phản hồi dự kiến được đề cập",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Vd: 'Chúng tôi thường phản hồi trong vòng 24-48 giờ.'",
+      "tool": ""
+    },
+    {
+      "id": "50",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Trang Chính sách Vận chuyển riêng biệt tồn tại và truy cập được",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có trang Chính sách Vận chuyển riêng biệt được liên kết từ footer và/hoặc header.",
+      "tool": ""
+    },
+    {
+      "id": "51",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Thời gian xử lý / chuẩn bị đơn hàng được ghi rõ (tính theo ngày làm việc)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Mất bao lâu để chuẩn bị đơn hàng trước khi giao cho đơn vị vận chuyển. Phải ghi 'ngày làm việc'.",
+      "tool": ""
+    },
+    {
+      "id": "52",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Thời gian giao hàng được ghi rõ (tính theo ngày làm việc)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Mất bao lâu để giao hàng sau khi đã gửi đi. Phải ghi 'ngày làm việc' và theo từng khu vực.",
+      "tool": ""
+    },
+    {
+      "id": "53",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Chi phí vận chuyển được ghi rõ ràng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải ghi chi phí cụ thể hoặc 'tính khi thanh toán'. Nếu có miễn phí vận chuyển, ghi rõ điều kiện.",
+      "tool": ""
+    },
+    {
+      "id": "54",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Ngưỡng miễn phí vận chuyển nhất quán trên toàn website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu footer ghi 'Miễn phí vận chuyển trên X', Chính sách Vận chuyển phải ghi cùng số tiền đó.",
+      "tool": ""
+    },
+    {
+      "id": "55",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Các khu vực / quốc gia vận chuyển được liệt kê",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Chỉ định rõ bạn giao hàng đến quốc gia hoặc khu vực nào.",
+      "tool": ""
+    },
+    {
+      "id": "56",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Thông tin theo dõi đơn hàng được cung cấp",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Giải thích cách khách hàng nhận mã theo dõi và theo dõi ở đâu.",
+      "tool": ""
+    },
+    {
+      "id": "57",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Trách nhiệm về thuế hải quan được nêu rõ (cho đơn quốc tế)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Đối với vận chuyển quốc tế, nêu rõ ai chịu trách nhiệm về thuế hải quan và thuế nhập khẩu.",
+      "tool": ""
+    },
+    {
+      "id": "58",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Chính sách xử lý gói hàng thất lạc / chưa giao được đề cập",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Giải thích điều gì xảy ra nếu gói hàng bị thất lạc hoặc không được giao.",
+      "tool": ""
+    },
+    {
+      "id": "59",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Email / thông tin liên hệ cho câu hỏi về vận chuyển",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có email hoặc liên kết liên hệ cho các câu hỏi liên quan đến vận chuyển.",
+      "tool": ""
+    },
+    {
+      "id": "60",
+      "section": "Chính Sách Vận Chuyển",
+      "criteria": "Ngày cập nhật cuối cùng hiển thị trên trang",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Cho thấy chính sách còn hiện hành và được duy trì.",
+      "tool": ""
+    },
+    {
+      "id": "61",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Trang Chính sách Đổi trả & Hoàn tiền riêng biệt tồn tại và truy cập được",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có trang Chính sách Đổi trả riêng biệt được liên kết từ footer.",
+      "tool": ""
+    },
+    {
+      "id": "62",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Thời hạn đổi trả được ghi rõ ràng (vd: 14 hoặc 30 ngày)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải chỉ định khách hàng có bao nhiêu ngày sau khi nhận hàng để yêu cầu đổi trả.",
+      "tool": ""
+    },
+    {
+      "id": "63",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Điều kiện đổi trả được giải thích rõ ràng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nêu rõ trường hợp nào được đổi trả (hàng lỗi, sai hàng, đổi ý, v.v.).",
+      "tool": ""
+    },
+    {
+      "id": "64",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Trách nhiệm chi phí vận chuyển đổi trả được ghi rõ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải nêu rõ ai trả phí vận chuyển đổi trả: cho hàng lỗi VÀ cho trường hợp đổi ý.",
+      "tool": ""
+    },
+    {
+      "id": "65",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Thời gian xử lý hoàn tiền được ghi rõ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Mất bao lâu để xử lý hoàn tiền sau khi nhận được hàng trả về.",
+      "tool": ""
+    },
+    {
+      "id": "66",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Quy trình đổi trả từng bước được giải thích",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Hướng dẫn rõ ràng: Bước 1 → Bước 2 → Bước 3 để bắt đầu yêu cầu đổi trả.",
+      "tool": ""
+    },
+    {
+      "id": "67",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Chính sách hủy đơn hàng được đề cập",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nêu rõ khoảng thời gian có thể hủy đơn hàng trước khi giao hàng.",
+      "tool": ""
+    },
+    {
+      "id": "68",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Ngoại lệ cho sản phẩm tùy chỉnh / made-to-order được giải thích (nếu có)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu sản phẩm được làm theo yêu cầu, giải thích tại sao không nhận đổi trả trong một số trường hợp.",
+      "tool": ""
+    },
+    {
+      "id": "69",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Chính sách KHÔNG mâu thuẫn với các trang khác (vd: footer, FAQ)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu footer ghi 'Đổi trả miễn phí' nhưng chính sách lại ghi khách hàng phải trả, đây là vi phạm nghiêm trọng.",
+      "tool": ""
+    },
+    {
+      "id": "70",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Email / thông tin liên hệ cho câu hỏi về đổi trả",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có email hoặc liên kết liên hệ cho các câu hỏi liên quan đến đổi trả.",
+      "tool": ""
+    },
+    {
+      "id": "71",
+      "section": "Chính Sách Đổi Trả & Hoàn Tiền",
+      "criteria": "Ngày cập nhật cuối cùng hiển thị trên trang",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Cho thấy chính sách còn hiện hành và được duy trì.",
+      "tool": ""
+    },
+    {
+      "id": "72",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Trang Chính sách Bảo mật riêng biệt tồn tại và truy cập được",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có trang Chính sách Bảo mật riêng biệt được liên kết từ footer.",
+      "tool": ""
+    },
+    {
+      "id": "73",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Cookie liên quan được tiết lộ (Google Analytics, Meta Pixel, v.v.)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải đề cập tất cả cookie theo dõi đang sử dụng: Google Analytics, Facebook/Meta Pixel, v.v.",
+      "tool": ""
+    },
+    {
+      "id": "74",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Thực hành thu thập dữ liệu được giải thích (đơn hàng, thanh toán, thông tin cá nhân)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải giải thích dữ liệu nào bạn thu thập: tên, email, địa chỉ, thông tin thanh toán, lịch sử đơn hàng.",
+      "tool": ""
+    },
+    {
+      "id": "75",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Luật bảo mật áp dụng được tham chiếu đúng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải tham chiếu luật đúng cho vị trí doanh nghiệp của bạn (GDPR cho EU, CCPA cho California, v.v.). KHÔNG tham chiếu luật của quốc gia khác.",
+      "tool": ""
+    },
+    {
+      "id": "76",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Email / thông tin liên hệ cho câu hỏi về bảo mật",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phải có email hoặc liên kết liên hệ cho các câu hỏi liên quan đến bảo mật.",
+      "tool": ""
+    },
+    {
+      "id": "77",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Quyền của người dùng được giải thích (truy cập, xóa, từ chối)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Giải thích cách người dùng có thể yêu cầu truy cập, chỉnh sửa hoặc xóa dữ liệu của họ.",
+      "tool": ""
+    },
+    {
+      "id": "78",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Việc chia sẻ dữ liệu với bên thứ ba được tiết lộ",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu bạn chia sẻ dữ liệu với bên thứ ba (đơn vị xử lý thanh toán, đơn vị vận chuyển), hãy tiết lộ điều đó.",
+      "tool": ""
+    },
+    {
+      "id": "79",
+      "section": "Chính Sách Bảo Mật",
+      "criteria": "Chính sách KHÔNG phải mẫu chung (phải tùy chỉnh cho cửa hàng của bạn)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Mẫu mặc định của WordPress/Shopify là KHÔNG đủ. Phải được tùy chỉnh cho doanh nghiệp thương mại điện tử của bạn.",
+      "tool": ""
+    },
+    {
+      "id": "80",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Phương thức thanh toán trên website khớp với tùy chọn thanh toán thực tế",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu bạn hiển thị icon Visa, Mastercard, PayPal, những phương thức đó phải có sẵn khi thanh toán.",
+      "tool": ""
+    },
+    {
+      "id": "81",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Icon phương thức thanh toán được hiển thị (footer hoặc trang sản phẩm)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Icon thanh toán trực quan tăng độ tin cậy. Hiển thị trong footer hoặc gần nút Thêm vào giỏ hàng.",
+      "tool": ""
+    },
+    {
+      "id": "82",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Chỉ báo thanh toán an toàn hiển thị (khóa SSL, huy hiệu tin cậy)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Hiển thị 'Thanh toán an toàn được đảm bảo' hoặc huy hiệu tin cậy tương tự gần khu vực thanh toán.",
+      "tool": ""
+    },
+    {
+      "id": "83",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Không chuyển hướng đến trang thanh toán bên thứ ba đáng ngờ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Thanh toán phải sử dụng các đơn vị xử lý đáng tin cậy (Stripe, PayPal, Shopify Payments, v.v.).",
+      "tool": ""
+    },
+    {
+      "id": "84",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Tính thuế chính xác (KHÔNG đề cập 'không có thuế' hoặc 'miễn thuế')",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Thuế phải được tính đúng. Không bao giờ tuyên bố 'không có thuế' hoặc 'miễn thuế' vì điều này có thể gây hiểu nhầm.",
+      "tool": ""
+    },
+    {
+      "id": "85",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Email / thông tin liên hệ cho câu hỏi về thanh toán",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Phải có email hoặc liên kết liên hệ cho các câu hỏi liên quan đến thanh toán.",
+      "tool": ""
+    },
+    {
+      "id": "86",
+      "section": "Chính Sách Thanh Toán & Phương Thức",
+      "criteria": "Các phương thức thanh toán được chấp nhận",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Liệt kê tất cả các phương thức thanh toán được chấp nhận.",
+      "tool": ""
+    },
+    {
+      "id": "87",
+      "section": "Điều Khoản Dịch Vụ",
+      "criteria": "Trang Điều khoản Dịch vụ riêng biệt tồn tại",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Khuyến nghị có trang Điều khoản Dịch vụ / Điều khoản Sử dụng riêng biệt.",
+      "tool": ""
+    },
+    {
+      "id": "88",
+      "section": "Điều Khoản Dịch Vụ",
+      "criteria": "Không có tuyên bố hứa hẹn quá mức trong điều khoản",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tránh các tuyên bố bạn không thể thực hiện (vd: 'đảm bảo 100% hài lòng' mà không có quy trình hoàn tiền rõ ràng).",
+      "tool": ""
+    },
+    {
+      "id": "89",
+      "section": "Điều Khoản Dịch Vụ",
+      "criteria": "Email / thông tin liên hệ cho câu hỏi về điều khoản",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Phải có email hoặc liên kết liên hệ cho các câu hỏi liên quan đến điều khoản.",
+      "tool": ""
+    },
+    {
+      "id": "90",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Tất cả sản phẩm tuân thủ chính sách Google Shopping (không có nội dung bị cấm)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Sản phẩm không được bị cấm (hàng giả, nguy hiểm, nội dung người lớn, v.v.). Kiểm tra danh sách sản phẩm bị hạn chế của Google.",
+      "tool": "https://support.google.com/merchants/answer/6150006"
+    },
+    {
+      "id": "91",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Hình ảnh sản phẩm chất lượng cao (tối thiểu 800×800px, nền trắng/sạch)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Hình ảnh phải rõ ràng, chuyên nghiệp và thể hiện chính xác sản phẩm.",
+      "tool": ""
+    },
+    {
+      "id": "92",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Tiêu đề sản phẩm chính xác và mô tả đầy đủ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tiêu đề phải mô tả chính xác sản phẩm. Không nhồi từ khóa hoặc tiêu đề gây hiểu nhầm.",
+      "tool": ""
+    },
+    {
+      "id": "93",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Mô tả sản phẩm chi tiết và chính xác",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Bao gồm chất liệu, kích thước, màu sắc, tính năng. Mô tả phải khớp với sản phẩm thực tế.",
+      "tool": ""
+    },
+    {
+      "id": "94",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Giá được hiển thị rõ ràng với đơn vị tiền tệ đúng",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Giá phải hiển thị rõ, đúng đơn vị tiền tệ và khớp với product feed.",
+      "tool": ""
+    },
+    {
+      "id": "95",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Các biến thể sản phẩm (kích thước, màu sắc, v.v.) có thể chọn được",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu sản phẩm có biến thể, chúng phải chọn được và mỗi biến thể phải có giá đúng.",
+      "tool": ""
+    },
+    {
+      "id": "96",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Nút Thêm vào giỏ hàng / Mua ngay hoạt động bình thường",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Quy trình mua hàng phải hoạt động đúng từ trang sản phẩm đến thanh toán.",
+      "tool": ""
+    },
+    {
+      "id": "97",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Không có chiến thuật tạo sự cấp bách giả hoặc khan hiếm giả",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "'X người đang xem ngay bây giờ', đồng hồ đếm ngược giả, hoặc 'Chỉ còn 2 cái!' (khi không đúng) vi phạm chính sách Trình bày sai.",
+      "tool": ""
+    },
+    {
+      "id": "98",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Không có đánh giá giả hoặc yếu tố tin cậy giả",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tất cả yếu tố tin cậy phải thực. Logo báo chí giả, đánh giá sao bịa đặt, hoặc đánh giá sao chép vi phạm chính sách.",
+      "tool": ""
+    },
+    {
+      "id": "99",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Trạng thái hàng tồn kho chính xác",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu sản phẩm hết hàng, phải hiển thị là không có sẵn. Không nhận đơn hàng cho mặt hàng không có sẵn.",
+      "tool": ""
+    },
+    {
+      "id": "100",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Điều hướng breadcrumb hiển thị",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Breadcrumb giúp Google hiểu cấu trúc trang và cải thiện trải nghiệm người dùng.",
+      "tool": ""
+    },
+    {
+      "id": "101",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Hướng dẫn kích thước có sẵn (cho quần áo)",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Đối với quần áo/giày dép, hướng dẫn kích thước giúp giảm đổi trả và tăng độ tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "102",
+      "section": "Trang Sản Phẩm",
+      "criteria": "Phần đánh giá của khách hàng tồn tại",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Đánh giá thực của khách hàng tăng đáng kể độ tin cậy và tỷ lệ chuyển đổi.",
+      "tool": ""
+    },
+    {
+      "id": "103",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Giá khuyến mãi có ngày bắt đầu/kết thúc rõ ràng hoặc là thực sự",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu hiển thị giá 'cũ/mới', giá gốc phải là thực (đã từng tính). Khuyến mãi vĩnh viễn là giá giả.",
+      "tool": ""
+    },
+    {
+      "id": "104",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Không có giá gốc giả (giá 'cũ' bị thổi phồng)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu TẤT CẢ sản phẩm đều hiển thị cùng % giảm giá, đây là dấu hiệu cảnh báo về giá giả.",
+      "tool": ""
+    },
+    {
+      "id": "105",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Giá trên website khớp với giá trong product feed",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Giá hiển thị trên trang sản phẩm phải khớp chính xác với giá trong GMC product feed, bao gồm đơn vị tiền tệ.",
+      "tool": ""
+    },
+    {
+      "id": "106",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Không có khuyến mãi hết hạn vẫn hiển thị trên website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Xóa tất cả banner sale hết hạn, ưu đãi Black Friday, khuyến mãi ngày lễ, v.v.",
+      "tool": ""
+    },
+    {
+      "id": "107",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Điều kiện miễn phí vận chuyển nhất quán trên tất cả các trang",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Nếu bạn cung cấp miễn phí vận chuyển trên X, điều này phải được nêu nhất quán trên trang sản phẩm, chính sách vận chuyển và footer.",
+      "tool": ""
+    },
+    {
+      "id": "108",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Không có phí ẩn khi thanh toán",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Giá cuối cùng khi thanh toán không được cao hơn đáng kể so với giá sản phẩm đã hiển thị.",
+      "tool": ""
+    },
+    {
+      "id": "109",
+      "section": "Giá Cả & Khuyến Mãi",
+      "criteria": "Đơn vị tiền tệ đúng cho quốc gia mục tiêu",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu nhắm đến UK, dùng GBP (£). Nếu nhắm đến US, dùng USD ($). Phải khớp với cài đặt GMC.",
+      "tool": ""
+    },
+    {
+      "id": "110",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Tên miền đã được xác nhận",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tên miền website phải được xác nhận trong Merchant Center.",
+      "tool": ""
+    },
+    {
+      "id": "111",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Thông tin doanh nghiệp trong GMC khớp chính xác với website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tên doanh nghiệp, địa chỉ, điện thoại, email trong GMC phải hoàn toàn giống với website.",
+      "tool": ""
+    },
+    {
+      "id": "112",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Cài đặt vận chuyển trong GMC khớp với Chính sách Vận chuyển",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Phí vận chuyển và thời gian giao hàng trong GMC phải khớp với những gì nêu trên website.",
+      "tool": ""
+    },
+    {
+      "id": "113",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Cài đặt chính sách đổi trả trong GMC khớp với trang Chính sách Đổi trả",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Thời hạn đổi trả và điều kiện trong GMC phải khớp với Chính sách Đổi trả trên website.",
+      "tool": ""
+    },
+    {
+      "id": "114",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Tài khoản Google Ads được liên kết với phương thức thanh toán hợp lệ",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tài khoản Google Ads phải được liên kết với GMC và có phương thức thanh toán hợp lệ.",
+      "tool": ""
+    },
+    {
+      "id": "115",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Danh mục sản phẩm trong feed (google_product_category) chính xác",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Sản phẩm phải ở đúng danh mục phân loại của Google. Sai danh mục = Trình bày sai.",
+      "tool": "https://support.google.com/merchants/answer/6324436"
+    },
+    {
+      "id": "116",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Giá trong product feed khớp với giá trên website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Giá trong feed phải khớp chính xác với giá trên trang đích, bao gồm đơn vị tiền tệ.",
+      "tool": ""
+    },
+    {
+      "id": "117",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Hình ảnh trong product feed chất lượng cao và khớp với website",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "image_link trong feed phải trỏ đến cùng hình ảnh chất lượng cao hiển thị trên trang sản phẩm.",
+      "tool": ""
+    },
+    {
+      "id": "118",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Không có sản phẩm bị từ chối trong feed (kiểm tra Diagnostics)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Thường xuyên kiểm tra Diagnostics trong Merchant Center để tìm sản phẩm bị từ chối và sửa chúng.",
+      "tool": ""
+    },
+    {
+      "id": "119",
+      "section": "Cài Đặt Google Merchant Center",
+      "criteria": "Định danh sản phẩm (GTIN, MPN, thương hiệu) chính xác",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Nếu sản phẩm có GTIN/mã vạch, hãy bao gồm chúng. Đặt identifier_exists đúng.",
+      "tool": ""
+    },
+    {
+      "id": "120",
+      "section": "Độ Tin Cậy & Bằng Chứng Xã Hội",
+      "criteria": "Không có yếu tố tin cậy giả (đánh giá giả, logo báo chí giả, huy hiệu giả)",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tất cả yếu tố tin cậy phải thực. Logo 'Được đăng trên CNN/Forbes' giả hoặc đánh giá bịa đặt = bị tạm ngưng ngay.",
+      "tool": ""
+    },
+    {
+      "id": "121",
+      "section": "Độ Tin Cậy & Bằng Chứng Xã Hội",
+      "criteria": "Trustpilot hoặc nền tảng đánh giá được liên kết (nếu có)",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Liên kết đến nền tảng đánh giá bên thứ ba thực để tăng độ tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "122",
+      "section": "Độ Tin Cậy & Bằng Chứng Xã Hội",
+      "criteria": "Hồ sơ mạng xã hội hoạt động và được liên kết",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Hồ sơ mạng xã hội hoạt động (Instagram, Facebook, v.v.) tăng tín hiệu tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "123",
+      "section": "Độ Tin Cậy & Bằng Chứng Xã Hội",
+      "criteria": "Không có tuyên bố hứa hẹn quá mức ở bất kỳ đâu trên website",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tránh các tuyên bố như 'kết quả được đảm bảo', '#1 thế giới', hoặc các tính từ vô căn cứ.",
+      "tool": ""
+    },
+    {
+      "id": "124",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Không có nội dung sao chép từ website khác mà không chỉnh sửa",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Tất cả nội dung phải là bản gốc. Nội dung copy-paste từ cửa hàng khác (đặc biệt với tên thương hiệu sai) = Trình bày sai.",
+      "tool": ""
+    },
+    {
+      "id": "125",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Ngôn ngữ nhất quán trên tất cả các trang",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Tất cả các trang nên dùng cùng một ngôn ngữ. Ngôn ngữ hỗn hợp làm giảm độ tin cậy.",
+      "tool": ""
+    },
+    {
+      "id": "126",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Không có lỗi chính tả hoặc ngữ pháp đáng kể",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Chất lượng ngôn ngữ kém làm giảm độ tin cậy và có thể cho thấy website chất lượng thấp hoặc lừa đảo.",
+      "tool": ""
+    },
+    {
+      "id": "127",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Mô tả sản phẩm không gây hiểu nhầm hoặc phóng đại",
+      "level": "🔴 BẮT BUỘC",
+      "guide": "Không tuyên bố các tính năng mà sản phẩm không có. 'Được cấp phép chính thức' cần có bằng chứng.",
+      "tool": ""
+    },
+    {
+      "id": "128",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Địa chỉ email được định dạng đúng (không có dấu chấm thừa)",
+      "level": "🟡 CẢNH BÁO",
+      "guide": "Đảm bảo địa chỉ email không có dấu chấm thừa (vd: support@store.com. là sai).",
+      "tool": ""
+    },
+    {
+      "id": "129",
+      "section": "Nội Dung & Ngôn Ngữ",
+      "criteria": "Trang liên hệ được liên kết trên tất cả các trang chính sách",
+      "level": "🔵 KHUYẾN NGHỊ",
+      "guide": "Mỗi trang chính sách nên có liên kết đến trang Liên hệ để giải đáp thắc mắc.",
+      "tool": ""
+    },
+    {
+      "id": "130",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Tên pháp lý doanh nghiệp",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Tên doanh nghiệp đã đăng ký (LLC, Ltd, Inc, v.v.)",
+      "tool": ""
+    },
+    {
+      "id": "131",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Tên thương hiệu / Tên giao dịch",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Tên thương hiệu hiển thị trên website của bạn",
+      "tool": ""
+    },
+    {
+      "id": "132",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Email doanh nghiệp",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Phải là email tên miền doanh nghiệp (vd: support@cửahàng.com)",
+      "tool": ""
+    },
+    {
+      "id": "133",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Số điện thoại doanh nghiệp",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Bao gồm mã quốc gia nếu là quốc tế",
+      "tool": ""
+    },
+    {
+      "id": "134",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Địa chỉ doanh nghiệp",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Định dạng: [Số nhà + Tên đường], [Thành phố], [Tỉnh/Bang], [Mã bưu chính], [Quốc gia]",
+      "tool": ""
+    },
+    {
+      "id": "135",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Thời gian xử lý / chuẩn bị đơn hàng",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Mất bao lâu để chuẩn bị đơn hàng (vd: 3-5 ngày làm việc)",
+      "tool": ""
+    },
+    {
+      "id": "136",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Thời gian giao hàng nội địa",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Thời gian giao hàng cho đơn nội địa (vd: 5-10 ngày làm việc)",
+      "tool": ""
+    },
+    {
+      "id": "137",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Thời gian giao hàng quốc tế",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Thời gian giao hàng cho đơn quốc tế (vd: 10-20 ngày làm việc)",
+      "tool": ""
+    },
+    {
+      "id": "138",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Thời hạn đổi trả",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Khách hàng có bao nhiêu ngày để yêu cầu đổi trả (vd: 30 ngày)",
+      "tool": ""
+    },
+    {
+      "id": "139",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Thời gian xử lý hoàn tiền",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Mất bao lâu để xử lý hoàn tiền sau khi nhận hàng trả về (vd: 5-10 ngày làm việc)",
+      "tool": ""
+    },
+    {
+      "id": "140",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Các phương thức thanh toán được chấp nhận",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "Liệt kê tất cả: vd: Visa, Mastercard, Amex, PayPal, Apple Pay, Klarna",
+      "tool": ""
+    },
+    {
+      "id": "141",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Giờ làm việc bộ phận hỗ trợ khách hàng",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "vd: Thứ Hai đến Thứ Sáu, 9:00 SA - 5:00 CH (GMT+7)",
+      "tool": ""
+    },
+    {
+      "id": "142",
+      "section": "Thông Tin Cần Điền — Doanh Nghiệp",
+      "criteria": "Ngưỡng miễn phí vận chuyển",
+      "level": "📝 ĐIỀN VÀO",
+      "guide": "vd: Miễn phí vận chuyển cho đơn hàng trên 99$ (hoặc 'Không có' nếu không có miễn phí)",
+      "tool": ""
+    }
+  ],
+  "guide": [
+    "📖 HƯỚNG DẪN SỬ DỤNG & CÁCH YÊU CẦU XEM XÉT LẠI TÀI KHOẢN",
+    "CÁCH SỬ DỤNG CHECKLIST NÀY",
+    "Bước 1: Mở sheet '✅ Checklist' và điền tên website + ngày kiểm tra vào dòng 3.",
+    "Bước 2: Đi qua từng tiêu chí, chọn trạng thái từ dropdown ở cột 'Trạng Thái'.",
+    "Bước 3: Ghi chú hành động cần làm vào cột 'Ghi Chú' cho các mục Không Đạt.",
+    "Bước 4: Ưu tiên xử lý tất cả tiêu chí 🔴 BẮT BUỘC trước tiên.",
+    "Bước 5: Điền thông tin doanh nghiệp vào Phần 15 (Thông Tin Cần Điền).",
+    "Bước 6: Khi 90%+ tiêu chí BẮT BUỘC đạt → Sẵn sàng nộp lên Google Merchant Center.",
+    "GIẢI THÍCH MỨC ĐỘ ƯU TIÊN",
+    "🔴 BẮT BUỘC — Phải đạt. Vi phạm sẽ bị từ chối hoặc tạm ngưng tài khoản ngay lập tức.",
+    "🟡 CẢNH BÁO — Quan trọng, nên khắc phục. Có thể gây ra vấn đề nếu không xử lý.",
+    "🔵 KHUYẾN NGHỊ — Nên có. Giúp tối ưu hiệu quả và tăng độ tin cậy với Google.",
+    "🟣 TÙY CHỌN — Không bắt buộc. Tốt nhất nên có nhưng không ảnh hưởng đến việc phê duyệt.",
+    "📝 ĐIỀN VÀO — Điền thông tin doanh nghiệp của bạn vào các ô màu xanh nhạt.",
+    "⚠️ CÁCH YÊU CẦU XEM XÉT LẠI — ĐỌC KỸ PHẦN NÀY",
+    "❌ KHÔNG sử dụng nút 'Request Review' trong giao diện Merchant Center!",
+    "Nút đó không cho phép bạn thêm giải thích hoặc tài liệu chứng minh các thay đổi đã thực hiện.",
+    "✅ Thay vào đó, hãy sử dụng link hỗ trợ trực tiếp này:",
+    "👉 https://support.google.com/merchants/contact/suspended",
+    "Khi yêu cầu xem xét qua link trên, hãy làm theo các bước sau:",
+    "1. Tạo danh sách chi tiết TẤT CẢ các cải thiện bạn đã thực hiện trên website.",
+    "2. Đính kèm ảnh chụp màn hình (screenshot) chứng minh từng thay đổi.",
+    "3. Giải thích rõ ràng từng thay đổi và lý do tại sao nó giải quyết vấn đề.",
+    "4. Thể hiện thiện chí tuân thủ đầy đủ chính sách của Google.",
+    "5. Kiên nhẫn chờ đợi — quá trình xem xét có thể mất 3-7 ngày làm việc.",
+    "TEMPLATE THÔNG TIN DOANH NGHIỆP CHUẨN",
+    "Sử dụng định dạng này cho trang Liên hệ / Giới thiệu của bạn:",
+    "Tên công ty: [Tên pháp lý đầy đủ]",
+    "Địa chỉ: [Số nhà + Tên đường], [Thành phố], [Tỉnh/Bang], [Mã bưu chính], [Quốc gia]",
+    "Email: support@cửahàng.com  (KHÔNG dùng Gmail cá nhân)",
+    "Form liên hệ: https://cửahàng.com/contact",
+    "Điện thoại: +84-XXX-XXX-XXXX",
+    "Mã số doanh nghiệp: XXXXX (nếu có)",
+    "Giờ hỗ trợ: Thứ Hai đến Thứ Sáu, 9:00 SA đến 5:00 CH (GMT+7)",
+    "TÀI LIỆU THAM KHẢO — CHÍNH SÁCH GOOGLE",
+    "Chính sách Trình bày sai (Misrepresentation): https://support.google.com/merchants/answer/6150127",
+    "Chính sách Quảng cáo Shopping: https://support.google.com/merchants/answer/12079606",
+    "Thông số kỹ thuật dữ liệu sản phẩm: https://support.google.com/merchants/answer/7052112",
+    "Nội dung bị cấm trong Google Shopping: https://support.google.com/merchants/answer/6150006",
+    "Yêu cầu xem xét lại (tài khoản bị tạm ngưng): https://support.google.com/merchants/contact/suspended",
+    "Kiểm tra tốc độ trang: https://pagespeed.web.dev/",
+    "Kiểm tra liên kết hỏng: https://www.deadlinkchecker.com/",
+    "Kiểm tra phần mềm độc hại: https://www.virustotal.com/gui/home/url",
+    "Kiểm tra SSL: https://www.ssllabs.com/ssltest/",
+    "Kiểm tra email: https://email-checker.net/"
+  ],
+  "stats": [
+    [
+      "📊 BẢNG TỔNG QUAN TUÂN THỦ CHÍNH SÁCH THỐNG KÊ THEO MỨC ĐỘ ƯU TIÊN"
+    ],
+    [
+      "Tổng tiêu chí kiểm tra (không tính Điền vào)",
+      "129"
+    ],
+    [
+      "🔴 Tiêu chí BẮT BUỘC",
+      "75"
+    ],
+    [
+      "🟡 Tiêu chí CẢNH BÁO",
+      "33"
+    ],
+    [
+      "🔵 Tiêu chí KHUYẾN NGHỊ",
+      "20"
+    ],
+    [
+      "🟣 Tiêu chí TÙY CHỌN",
+      "1"
+    ],
+    [
+      "📝 Trường ĐIỀN VÀO",
+      "13"
+    ],
+    [
+      "THỐNG KÊ THEO PHẦN"
+    ],
+    [
+      "Phần",
+      "Tùy Chọn"
+    ],
+    [
+      "Kiểm Tra Kỹ Thuật & Bảo Mật",
+      "9",
+      "1",
+      "1",
+      "-"
+    ],
+    [
+      "Thông Tin Doanh Nghiệp",
+      "6",
+      "3",
+      "2",
+      "1"
+    ],
+    [
+      "Điều Hướng Website",
+      "8",
+      "5",
+      "6",
+      "-"
+    ],
+    [
+      "Trang Liên Hệ",
+      "3",
+      "2",
+      "2",
+      "-"
+    ],
+    [
+      "Chính Sách Vận Chuyển",
+      "6",
+      "3",
+      "2",
+      "-"
+    ],
+    [
+      "Chính Sách Đổi Trả & Hoàn Tiền",
+      "8",
+      "2",
+      "1",
+      "-"
+    ],
+    [
+      "Chính Sách Bảo Mật",
+      "6",
+      "2",
+      "-"
+    ],
+    [
+      "Chính Sách Thanh Toán & Phương Thức",
+      "3",
+      "4",
+      "-"
+    ],
+    [
+      "Điều Khoản Dịch Vụ",
+      "1",
+      "2",
+      "-"
+    ],
+    [
+      "Trang Sản Phẩm",
+      "8",
+      "2",
+      "3",
+      "-"
+    ],
+    [
+      "Giá Cả & Khuyến Mãi",
+      "6",
+      "1",
+      "-"
+    ],
+    [
+      "Cài Đặt Google Merchant Center",
+      "7",
+      "3",
+      "-"
+    ],
+    [
+      "Độ Tin Cậy & Bằng Chứng Xã Hội",
+      "2",
+      "2",
+      "-"
+    ],
+    [
+      "Nội Dung & Ngôn Ngữ",
+      "2",
+      "3",
+      "1",
+      "-"
+    ],
+    [
+      "THANG ĐIỂM ĐÁNH GIÁ MỨC ĐỘ SẴN SÀNG"
+    ],
+    [
+      "90-100% tiêu chí BẮT BUỘC đạt"
+    ],
+    [
+      "70-89% tiêu chí BẮT BUỘC đạt"
+    ],
+    [
+      "50-69% tiêu chí BẮT BUỘC đạt"
+    ],
+    [
+      "Dưới 50% tiêu chí BẮT BUỘC đạt"
+    ]
+  ]
+}
