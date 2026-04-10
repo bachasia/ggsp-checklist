@@ -598,7 +598,7 @@ document.getElementById('btnGuide').addEventListener('click', () => {
   guideModal.classList.add('flex');
 });
 guideModal.addEventListener('click', e => {
-  if (e.target.matches('[data-close]')) {
+  if (e.target.closest('[data-close]')) {
     guideModal.classList.add('hidden');
     guideModal.classList.remove('flex');
   }
