@@ -55,6 +55,13 @@ server {
         proxy_pass http://localhost:3001;
         proxy_set_header Host $host;
         proxy_read_timeout 60s;
+
+        # SSE support — disable buffering for EventSource stream
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_set_header Connection '';
+        proxy_http_version 1.1;
+        chunked_transfer_encoding on;
     }
 }
 ```

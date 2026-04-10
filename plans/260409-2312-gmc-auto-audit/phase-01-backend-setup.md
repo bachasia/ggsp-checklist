@@ -1,20 +1,22 @@
 ---
 title: Phase 01 — Backend Setup
-status: pending
+status: completed
 ---
 
 # Phase 01 — Backend Setup
 
 ## Overview
 
-Tạo Node.js + Express server làm nền cho crawl API.
+Tạo Node.js + Express server với SSE streaming, in-memory cache, và per-module timeout.
 
 ## Requirements
 
 - Node.js >= 18, Express, Playwright
 - CORS configured cho frontend domain
-- Timeout 30s per request
+- Per-module timeout 8s (parallel checks), tổng job ≤ 35s
 - Graceful error handling (anti-bot, invalid URL, timeout)
+- In-memory cache: same domain reuse results 1h TTL
+- SSE endpoint để stream check-by-check progress về frontend
 
 ## Files to Create
 
@@ -37,24 +39,61 @@ Tạo Node.js + Express server làm nền cho crawl API.
    }
    ```
 
-2. `backend/server.js` — Express app:
-   - `POST /api/audit` → validate URL → call crawler → return results
-   - Input validation: must be http/https URL
-   - Timeout: 30s via `AbortController`
-   - Rate limit: 1 concurrent job (queue hoặc 503 nếu busy)
+2. `backend/server.js` — Express app với 2 endpoints:
+
+   **`POST /api/audit`** — trigger audit, trả về `{ jobId }`:
+   - Validate URL (must be http/https)
+   - Check in-memory cache (Map keyed by domain, TTL 1h)
+   - Nếu cache hit → trả kết quả ngay
+   - Nếu miss → spawn crawler async, lưu jobId
+   - Rate limit: 1 concurrent job per domain (503 nếu busy)
+
+   **`GET /api/audit/stream/:jobId`** — SSE stream kết quả:
+   - Header: `Content-Type: text/event-stream`
+   - Emit `event: result` cho mỗi check hoàn thành
+   - Emit `event: done` khi xong tất cả
+   - Emit `event: error` nếu có lỗi nghiêm trọng
+
+   ```js
+   // SSE format
+   res.write(`event: result\ndata: ${JSON.stringify({ id, status, detail })}\n\n`);
+   res.write(`event: done\ndata: ${JSON.stringify({ summary })}\n\n`);
+   ```
 
 3. `backend/ecosystem.config.js` — PM2 config:
    ```js
-   { name: 'gmc-audit', script: 'server.js', instances: 1, max_memory_restart: '400M' }
+   { name: 'gmc-audit', script: 'server.js', instances: 1, max_memory_restart: '500M' }
    ```
+
+## In-memory Cache Design
+
+```js
+// cache.js (simple Map, no Redis needed)
+const cache = new Map(); // key: domain, value: { results, timestamp }
+const TTL = 60 * 60 * 1000; // 1 hour
+
+export function getCached(domain) {
+  const entry = cache.get(domain);
+  if (!entry) return null;
+  if (Date.now() - entry.timestamp > TTL) { cache.delete(domain); return null; }
+  return entry.results;
+}
+export function setCached(domain, results) {
+  cache.set(domain, { results, timestamp: Date.now() });
+}
+```
 
 ## Todo
 
-- [ ] `npm init` + install deps
-- [ ] Tạo `server.js` với Express + CORS + `/api/audit` endpoint
-- [ ] Tạo `ecosystem.config.js` cho PM2
-- [ ] Test endpoint với `curl`
+- [x] `npm init` + install deps
+- [x] Tạo `server.js` với `POST /api/audit` + `GET /api/audit/stream/:jobId`
+- [x] Tạo `cache.js` — in-memory domain cache
+- [x] Tạo `ecosystem.config.js` cho PM2
+- [x] Test SSE stream với `curl --no-buffer`
 
 ## Success Criteria
 
-- `curl -X POST http://localhost:3001/api/audit -d '{"url":"https://google.com"}'` trả về JSON không lỗi
+- `POST /api/audit` trả về `{ jobId }` không lỗi
+- `GET /api/audit/stream/:jobId` stream SSE events về client
+- Cache hit trả kết quả ngay (< 100ms)
+- 2nd request cùng domain trong 1h → dùng cache
